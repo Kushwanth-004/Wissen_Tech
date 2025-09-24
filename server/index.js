@@ -10,7 +10,7 @@ app.use(express.json());
 
 const PORT = process.env.PORT || 5000;
 const CAL_BASE = "https://calendarific.com/api/v2";
-const API_KEY = "41Yv0qEZLoZ7mlTVugiEEcxYPJ7ifDTb"; // ⚠️ better: use process.env.CALENDARIFIC_API_KEY
+const API_KEY = "9Grv0cTM5kn8nX5jtcbi2kTj5SbmURg6"; // ⚠️ better: use process.env.CALENDARIFIC_API_KEY
 
 // ✅ Get list of available countries
 app.get("/api/countries", async (req, res) => {
