@@ -1,4 +1,4 @@
-// server/index.js
+
 require('dotenv').config();
 const express = require('express');
 const axios = require('axios');
@@ -10,15 +10,13 @@ app.use(express.json());
 
 const PORT = process.env.PORT || 5000;
 const CAL_BASE = "https://calendarific.com/api/v2";
-const API_KEY = "9Grv0cTM5kn8nX5jtcbi2kTj5SbmURg6"; // ⚠️ better: use process.env.CALENDARIFIC_API_KEY
+const API_KEY = "9Grv0cTM5kn8nX5jtcbi2kTj5SbmURg6"; 
 
-// ✅ Get list of available countries
 app.get("/api/countries", async (req, res) => {
   try {
     const r = await axios.get(`${CAL_BASE}/countries`, {
       params: { api_key: API_KEY },
     });
-    // Calendarific returns { response: { countries: [ { iso-3166, country_name } ] } }
     const countries = r.data?.response?.countries?.map((c) => ({
       countryCode: c["iso-3166"],
       name: c.country_name,
@@ -30,7 +28,6 @@ app.get("/api/countries", async (req, res) => {
   }
 });
 
-// ✅ Get holidays for a country within a date range
 app.get("/api/holidays", async (req, res) => {
   try {
     const { country, start, end } = req.query;
@@ -63,7 +60,6 @@ app.get("/api/holidays", async (req, res) => {
       holidays = holidays.concat(yearHolidays);
     }
 
-    // filter to requested range
     holidays = holidays.filter((h) => {
       const d = new Date(h.date + "T00:00:00");
       return d >= startDate && d <= endDate;
@@ -79,5 +75,5 @@ app.get("/api/holidays", async (req, res) => {
 });
 
 app.listen(PORT, () =>
-  console.log(`✅ Server running on http://localhost:${PORT}`)
+  console.log(`Server running on http://localhost:${PORT}`)
 );
