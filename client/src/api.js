@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:5000';
+const API_BASE = import.meta.env.VITE_API_BASE || 'https://wissen-tech-8gqx.vercel.app';
 
 export async function fetchCountries() {
   return (await axios.get(`${API_BASE}/api/countries`)).data;
