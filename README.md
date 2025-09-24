@@ -1,109 +1,268 @@
-Vacation Calendar Project
+# Vacation Holiday Tracker
 
-A responsive and interactive Vacation Calendar application that allows users to view holidays and vacations in monthly or quarterly views. The calendar highlights weeks based on the number of holidays:
+A comprehensive holiday calendar application that helps you track holidays across multiple countries with an intuitive, visually appealing interface. Built with **React.js** frontend and **Node.js** backend, this application provides real-time holiday information with multiple viewing modes.
 
-1 holiday in a week → Light green row
+## 📋 Table of Contents
 
-More than 1 holiday in a week → Dark green row with white text
+- [Features](#-features)
+- [Tech Stack](#-tech-stack)
+- [Screenshots](#-screenshots)
+- [Installation](#-installation)
+- [Usage](#-usage)
+- [API Reference](#-api-reference)
+- [Project Structure](#-project-structure)
+- [Configuration](#-configuration)
+- [Contributing](#-contributing)
+- [License](#-license)
 
-This project helps organizations and individuals efficiently track holidays and vacations.
+## ✨ Features
 
-📁 Folder Structure
-project-root/
-├─ client/          # React frontend application
-├─ server/          # Backend server (APIs, data handling)
-├─ images/          # Output images/screenshots of the calendar (images1.png to images7.png)
+### 🌍 Multi-Country Support
+- Support for multiple countries including US, UK, Canada, India, Australia, Germany, France, Japan, Brazil, and Mexico
+- Real-time country selection with easy-to-read codes
+- Automatic holiday data fetching based on selected country
 
-✨ Features
+### 📅 Multiple View Modes
+- **Monthly View**: Detailed month-by-month holiday calendar
+- **Quarterly View**: 3-month overview with consolidated holiday information
+- **Custom Start Date**: Select any month to start the calendar
 
-Responsive Design: Works seamlessly on desktop and mobile devices.
+### 🎨 Visual Calendar Features
+- **Color-coded Weeks**:
+  - Light green → 1 holiday in a week
+  - Dark green → 2+ holidays in a week
+  - White → No holidays
+- **Interactive Navigation**: Hover to see holiday details
+- **Responsive Design**: Works seamlessly on desktop, tablet, and mobile
 
-Monthly & Quarterly Views: Toggle between monthly and 3-month views.
+### 🔄 Smart Data Management
+- **API Integration**: Connects to Calendarific API for real-time holiday data
+- **Fallback System**: Works with mock data when API is unavailable
+- **Error Handling**: User-friendly messages for failures
+- **Loading States**: Smooth loading indicators during data fetching
 
-Holiday Highlighting: Weeks are highlighted visually based on holidays.
+---
 
-Clean and Simple UI: Organized layout with proper alignment and hover effects.
+## 🛠️ Tech Stack
 
-Country Selection: Choose from different countries to view holidays.
+### Frontend
+- **React.js 18** - Modern React with hooks
+- **Tailwind CSS** - Responsive and clean UI
+- **Day.js** - Date manipulation and formatting
+- **Axios** - HTTP client for API requests
 
-Hover Tooltips: Display holiday names when hovering over a date.
+### Backend
+- **Node.js** - JavaScript runtime
+- **Express.js** - Web framework
+- **Axios** - Server-side HTTP requests
+- **CORS & dotenv** - Security and environment management
 
-🛠 Technologies Used
+### External Services
+- **Calendarific API** - Real-time holiday data provider
+- **Mock Data** - Fallback for offline usage
 
-Frontend: React, Tailwind CSS
+---
 
-Backend: Node.js, Express
+## 📸 Screenshots
 
-HTTP Requests: Axios
+### Monthly View
+![Monthly View](images/images1.png)  
+*Detailed monthly calendar with color-coded weeks*
 
-Date Handling: dayjs
+### Quarterly View
+![Quarterly View](images/images2.png)  
+*Three-month overview with consolidated holiday information*
 
-Environment Management: dotenv
+### Holiday Highlighting
+![Holiday Highlighting](images/images3.png)  
+*Light green for 1 holiday, dark green for 2+ holidays*
 
-Version Control: Git & GitHub
+### Country Selection
+![Country Selection](images/images4.png)  
+*Dropdown menu for country selection*
 
-🚀 Setup Instructions
-1. Clone the repository
-git clone <your-repo-link>
-cd project-root
+### Tooltip on Hover
+![Tooltip on Hover](images/images5.png)  
+*Hovering over a holiday shows its name and details*
 
-2. Setup and run the client
-cd client
+### Mobile View
+![Mobile View](images/images6.png)  
+*Responsive design adapts to mobile screens*
+
+### Full Calendar View
+![Full Calendar View](images/images7.png)  
+*Complete overview showing all months and holidays*
+
+---
+
+## 🚀 Installation
+
+### Prerequisites
+- Node.js (v14 or higher)
+- npm or yarn
+- Git
+
+### Clone the Repository
+
+## 🚀 Installation
+
+### Prerequisites
+- Node.js (v14 or higher)
+- npm or yarn
+- Git
+
+### Clone the Repository
+```bash
+git clone (https://github.com/Kushwanth-004/Wissen_Tech/edit/main)
+cd Vacation-Holiday-Tracker
+```
+
+### Backend Setup
+```bash
+cd backend
 npm install
+
+# Copy environment file
+cp .env.example .env
+
+# Add your API key (optional)
+# Edit .env file and add: CALENDARIFIC_API_KEY=your_key_here
+
+# Start the backend server
 npm run dev
+```
 
-3. Setup and run the server
-cd ../server
+The backend server will start on `http://localhost:5000`
+
+### Frontend Setup
+```bash
+cd frontend
 npm install
-node server.js
 
-4. Open the application
+# Start the React development server
+npm start
+```
 
-Visit http://localhost:5173
- (or the port your frontend is running on).
+The frontend application will start on `http://localhost:3000`
 
-🖼 Screenshots
+## 💡 Usage
 
-Monthly View
-![Monthly View](images/1.png)
+### Basic Usage
+1. **Start the Application**: Follow the installation steps above
+2. **Select Country**: Use the dropdown to choose your preferred country
+3. **Choose View Mode**: Select between Monthly, Quarterly, or Yearly view
+4. **Navigate Dates**: Use the navigation buttons to browse different time periods
+5. **View Holidays**: Hover over colored weeks to see holiday details
 
-Quarterly View
-![Quarterly View](images/image2.png)
+### API Key Configuration (Optional)
+1. Get a free API key from [Calendarific](https://calendarific.com/)
+2. Add it to your `backend/.env` file:
+   ```
+   CALENDARIFIC_API_KEY=your_api_key_here
+   ```
+3. Restart the backend server
 
-Holiday Highlighting
-![Holiday Highlighting](images/image3.png)
+**Note**: The application works with mock data if no API key is provided.
 
-Country Selection
-![Country Selection](images/image4.png)
+## 🔌 API Reference
 
-Tooltip on Hover
-![Tooltip on Hover](images/image5.png)
 
-Mobile View
-![Mobile View](images/image6.png)
 
-Full Calendar View
-![Full Calendar View](images/image7.png)
+**Parameters:**
+- `country` (required): Two-letter country code (e.g., 'US', 'IN')
+- `year` (required): Four-digit year (e.g., 2024)
+- `month` (optional): Month number 1-12
 
-⚙ How It Works
 
-Country Selection: Users select a country from the dropdown; the frontend fetches available countries via the /api/countries endpoint.
 
-Date Selection: Users select the month/year to view; the frontend calculates the start and end dates.
+### Get Countries
+```http
+GET /api/countries
+```
 
-Fetch Holidays: The frontend calls /api/holidays with the selected country and date range.
+Returns list of supported countries with codes and names.
 
-Render Calendar:
+## 📁 Project Structure
 
-1 holiday → light green row
+```
+Vacation-Holiday-Tracker/
+├── client/
+│   ├── components/         # React components
+│   ├── services/           # API service functions
+│   ├── App.js              # Main React entry
+│   ├── index.js            # React DOM render
+│   └── index.css           # Global styles
+├── server/
+│   ├── routes/             # API routes
+│   ├── services/           # Backend service logic
+│   ├── server.js           # Express server
+│   └── .env.example        # Environment variables
+├── images/                 # Output screenshots
+└── README.md
 
-More than 1 holiday → dark green row with white text
+```
 
-Hover Tooltips: Hovering over a holiday displays its name.
+## ⚙️ Configuration
 
-Responsive Layout: The calendar adjusts automatically between mobile, tablet, and desktop screens.
+### Environment Variables
+Create a `.env` file in the backend directory:
 
-👤 Author
+```env
 
-Your Name – V Kushwanth Kumar
-Email: vkushwanth2004@gmail.com
+```
+
+### Supported Countries
+All The Countries
+
+## 🎯 Features in Detail
+
+### Color-Coded Week System
+The calendar uses an intelligent color-coding system:
+- **White Background**: No holidays in the week
+- **Light Green **: Exactly 1 holiday in the week
+- **Dark Green **: 2 or more holidays in the week
+
+### Responsive Design
+The application is fully responsive and works on:
+- Desktop computers (1200px+)
+- Tablets (768px - 1199px)
+- Mobile phones (320px - 767px)
+
+### Error Handling
+Comprehensive error handling includes:
+- Network connectivity issues
+- Invalid date ranges
+- Server downtime fallbacks
+
+## 🤝 Contributing
+
+We welcome contributions! Please follow these steps:
+
+1. Fork the repository
+2. Create a feature branch 
+3. Commit your changes
+4. Push to the branch 
+5. Open a Pull Request
+
+### Development Guidelines
+- Follow existing code style and conventions
+- Add appropriate comments for complex logic
+- Test your changes thoroughly
+- Update documentation as needed
+
+
+## 🆘 Support
+
+If you encounter any issues or have questions:
+
+1. Create a new issue with detailed information
+2. Include steps to reproduce the problem
+3. Mention your operating system and browser version
+
+---
+
+**Made with ❤️ by the V KUSHWANTH KUMAR**
+
+*Enjoy tracking holidays around the world! 🌍*
+git clone <your-repo-link>
+cd Vacation-Holiday-Tracker
