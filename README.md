@@ -66,31 +66,38 @@ A comprehensive holiday calendar application that helps you track holidays acros
 ## 📸 Screenshots
 
 ### Monthly View
-<img width="911" height="565" alt="Screenshot 2025-09-24 at 7 21 27 PM" src="[https://github.com/Kushwanth-004/Wissen_Tech/tree/main/images/image1]" />
+<img width="911" height="565" alt="Screenshot" src="https://raw.githubusercontent.com/Kushwanth-004/Wissen_Tech/main/images/image1.png" />
+
 *Detailed monthly calendar with color-coded weeks*
 
 ### Quarterly View
-<img width="911" height="565" alt="Screenshot 2025-09-24 at 7 21 27 PM" src="[https://github.com/Kushwanth-004/Wissen_Tech/tree/main/images/image2]" />
+<img width="911" height="565" alt="Screenshot" src="https://raw.githubusercontent.com/Kushwanth-004/Wissen_Tech/main/images/image3.png" />
+
 *Three-month overview with consolidated holiday information*
 
 ### Holiday Highlighting
-<img width="911" height="565" alt="Screenshot 2025-09-24 at 7 21 27 PM" src="[https://github.com/Kushwanth-004/Wissen_Tech/tree/main/images/image3]" />
+<img width="911" height="565" alt="Screenshot" src="https://raw.githubusercontent.com/Kushwanth-004/Wissen_Tech/main/images/image2.png" />
+
 *Light green for 1 holiday, dark green for 2+ holidays*
 
 ### Country Selection
-<img width="911" height="565" alt="Screenshot 2025-09-24 at 7 21 27 PM" src="[https://github.com/Kushwanth-004/Wissen_Tech/tree/main/images/image4]" />
+<img width="911" height="565" alt="Screenshot" src="https://raw.githubusercontent.com/Kushwanth-004/Wissen_Tech/main/images/image6.png" />
+
 *Dropdown menu for country selection*
 
 ### Tooltip on Hover
-<img width="911" height="565" alt="Screenshot 2025-09-24 at 7 21 27 PM" src="[https://github.com/Kushwanth-004/Wissen_Tech/tree/main/images/image5]" />
+<img width="911" height="565" alt="Screenshot" src="https://raw.githubusercontent.com/Kushwanth-004/Wissen_Tech/main/images/image5.png" />
+
 *Hovering over a holiday shows its name and details*
 
 ### Mobile View
-<img width="911" height="565" alt="Screenshot 2025-09-24 at 7 21 27 PM" src="[https://github.com/Kushwanth-004/Wissen_Tech/tree/main/images/image6]" />
+<img width="911" height="565" alt="Screenshot" src="https://raw.githubusercontent.com/Kushwanth-004/Wissen_Tech/main/images/image6.png" />
+
 *Responsive design adapts to mobile screens*
 
 ### Full Calendar View
-<img width="911" height="565" alt="Screenshot 2025-09-24 at 7 21 27 PM" src="[https://github.com/Kushwanth-004/Wissen_Tech/tree/main/images/image7]" />  
+<img width="911" height="565" alt="Screenshot" src="https://raw.githubusercontent.com/Kushwanth-004/Wissen_Tech/main/images/image4.png" />
+
 *Complete overview showing all months and holidays*
 
 ---
