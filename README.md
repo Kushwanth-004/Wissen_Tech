@@ -66,31 +66,31 @@ A comprehensive holiday calendar application that helps you track holidays acros
 ## 📸 Screenshots
 
 ### Monthly View
-![Monthly View](images/images1.png)  
+<img width="911" height="565" alt="Screenshot 2025-09-24 at 7 21 27 PM" src="[https://github.com/Kushwanth-004/Wissen_Tech/tree/main/images/image1]" />
 *Detailed monthly calendar with color-coded weeks*
 
 ### Quarterly View
-![Quarterly View](images/images2.png)  
+<img width="911" height="565" alt="Screenshot 2025-09-24 at 7 21 27 PM" src="[https://github.com/Kushwanth-004/Wissen_Tech/tree/main/images/image2]" />
 *Three-month overview with consolidated holiday information*
 
 ### Holiday Highlighting
-![Holiday Highlighting](images/images3.png)  
+<img width="911" height="565" alt="Screenshot 2025-09-24 at 7 21 27 PM" src="[https://github.com/Kushwanth-004/Wissen_Tech/tree/main/images/image3]" />
 *Light green for 1 holiday, dark green for 2+ holidays*
 
 ### Country Selection
-![Country Selection](images/images4.png)  
+<img width="911" height="565" alt="Screenshot 2025-09-24 at 7 21 27 PM" src="[https://github.com/Kushwanth-004/Wissen_Tech/tree/main/images/image4]" />
 *Dropdown menu for country selection*
 
 ### Tooltip on Hover
-![Tooltip on Hover](images/images5.png)  
+<img width="911" height="565" alt="Screenshot 2025-09-24 at 7 21 27 PM" src="[https://github.com/Kushwanth-004/Wissen_Tech/tree/main/images/image5]" />
 *Hovering over a holiday shows its name and details*
 
 ### Mobile View
-![Mobile View](images/images6.png)  
+<img width="911" height="565" alt="Screenshot 2025-09-24 at 7 21 27 PM" src="[https://github.com/Kushwanth-004/Wissen_Tech/tree/main/images/image6]" />
 *Responsive design adapts to mobile screens*
 
 ### Full Calendar View
-![Full Calendar View](images/images7.png)  
+<img width="911" height="565" alt="Screenshot 2025-09-24 at 7 21 27 PM" src="[https://github.com/Kushwanth-004/Wissen_Tech/tree/main/images/image7]" />  
 *Complete overview showing all months and holidays*
 
 ---
